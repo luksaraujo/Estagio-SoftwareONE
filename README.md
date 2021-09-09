@@ -14,3 +14,5 @@ Este repositório foi criado para armazenar os arquivos e projetos gerados duran
 
 - **Git-Commands**
 - - Repositório criado para armazenar o arquivo .MD com a descrição dos principais comandos do Git.
+- **Terraform-Projects**
+- - Repositório criado para armazenar os projetos em Terraform criados para praticar o desenvolvimento nesta ferramenta.
