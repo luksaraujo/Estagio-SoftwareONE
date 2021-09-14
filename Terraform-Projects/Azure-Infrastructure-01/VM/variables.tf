@@ -16,3 +16,10 @@ variable "location" {
 variable "network_interface_ID" {
     type = string
 }
+
+variable "tags" {
+    type = object({
+        enviroment = string
+    })
+    description = "Tags utilizadas na maioria dos resources"
+}

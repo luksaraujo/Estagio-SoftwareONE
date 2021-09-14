@@ -5,8 +5,8 @@ provider "azurerm" {
     features {}
 }
 
-resource "azurerm_virtual_machine" "luksTestVM" {
-    name = "lukstestvm"
+resource "azurerm_virtual_machine" "VM" {
+    name = "TerraformTest01-VM"
     location = var.location
     resource_group_name = var.resourceGroupName
     network_interface_ids = ["${var.network_interface_id}"]
@@ -36,7 +36,5 @@ resource "azurerm_virtual_machine" "luksTestVM" {
         disable_password_authentication = false
     }
 
-    tags = {
-      enviroment = "staging"
-    }
+    tags = var.tags
 }
