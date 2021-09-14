@@ -12,3 +12,10 @@ variable "location" {
     type = string
     description = "Location do Resource Group"
 }
+
+variable "tags" {
+    type = object({
+        enviroment = string
+    })
+    description = "Tags utilizadas na maioria dos resources"
+}
